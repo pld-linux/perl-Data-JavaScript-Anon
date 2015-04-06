@@ -57,5 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/Data/JavaScript
 %{perl_vendorlib}/Data/JavaScript/Anon.pm
 %{_mandir}/man?/*
