@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# perform "make test" (require Internet connection)
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Data
 %define	pnam	JavaScript-Anon
 Summary:	Data::JavaScript::Anon - dump big dumb Perl structs to anonymous JavaScript structs
