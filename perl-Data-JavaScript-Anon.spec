@@ -8,11 +8,11 @@ Summary:	Data::JavaScript::Anon - dump big dumb Perl structs to anonymous JavaSc
 Summary(pl.UTF-8):	Data::JavaScript::Anon - konwersja dużych prostych struktur Perla do anonimowych struktur JavaScript
 Name:		perl-Data-JavaScript-Anon
 Version:	1.03
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/authors/id/A/AD/ADAMK/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6808b24eaa719b9303f904e0388f3ce3
 URL:		http://search.cpan.org/dist/Data-JavaScript-Anon/
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -38,7 +38,8 @@ które nie są klasami, nie mają specjalnych metod itp.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
+# bundled inc::Module::Install::DSL needs '.' in @INC (dropped since perl 5.26)
+%{__perl} -I. Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
 
