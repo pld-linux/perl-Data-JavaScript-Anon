@@ -8,7 +8,7 @@ Summary:	Data::JavaScript::Anon - dump big dumb Perl structs to anonymous JavaSc
 Summary(pl.UTF-8):	Data::JavaScript::Anon - konwersja dużych prostych struktur Perla do anonimowych struktur JavaScript
 Name:		perl-Data-JavaScript-Anon
 Version:	1.03
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
